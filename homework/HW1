@@ -1,0 +1,19 @@
+name = ['n1','n2','n3','n4','n5']
+sname = ['s1','s2','s3','s4','s5']
+midterm = ['midterm1', 'midterm2', 'midterm3', 'midterm4', 'midterm5']
+final = ['final1', 'final2', 'final3', 'final4', 'final5']
+homework = ['hw1', 'hw2', 'hw3', 'hw4', 'hw5']
+ort = ["ort1","ort2","ort3","ort4","ort5"]
+
+
+for i in range(len(name)):
+  name[i] = str(input("İsim girin: "))
+  sname[i] = str(input("Soyisim girin: "))
+  midterm[i] = int(input("Midterm girin: "))
+  final[i] = int(input("Final girin: "))
+  homework[i] = int(input("Homework notu girin: "))
+  ort[i] = ( midterm[i] + final[i] + homework[i] ) / 3
+
+ort.sort()
+
+print("CONGRATS!",name[4],"your point",ort[4])
